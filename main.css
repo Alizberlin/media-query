@@ -1,0 +1,96 @@
+body {
+	height: 100vh;
+	border: 10px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to left, grey, rgb(135, 156, 163));
+}
+
+main {
+	padding: 20px;
+	font-family: sans-serif;
+	color: rgb(253, 249, 249);
+	font-size: 1.6vw;
+	text-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2000px) {
+	main {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+	body {
+		border: 10px solid hotpink;
+	}
+	.message {
+		display: none;
+	}
+	ul li:nth-child(-n + 4) {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	body {
+		border: 10px solid yellow;
+	}
+	.message {
+		display: none;
+	}
+
+	ul li:nth-child(-n + 3),
+	ul li:last-child {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+	body {
+		border: 10px solid green;
+	}
+	ul li:nth-child(-n + 2),
+	ul li:nth-child(n + 4) {
+		display: none;
+	}
+	.message {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+	body {
+		border: 10px solid blue;
+	}
+	ul li:nth-child(-n + 1),
+	ul li:nth-child(n + 3) {
+		display: none;
+	}
+	.message {
+		display: none;
+	}
+	img {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		border: 10px solid red;
+	}
+	ul li:nth-child(n + 2) {
+		display: none;
+	}
+	.message {
+		display: none;
+	}
+	img {
+		width: 150px;
+	}
+}
